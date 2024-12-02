@@ -1,0 +1,205 @@
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribución uniforme */
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #e4b081;    
+}
+
+/* Logo (extremo izquierdo) */
+.navbar-brand {
+    margin-right: 1rem;
+}
+
+/* Menú centrado */
+.navbar-nav {
+    display: flex;
+    flex: 1; 
+    justify-content: center; 
+    gap: 2.5rem; 
+    padding-right: 8%;
+}
+
+/* Enlaces del menú */
+.nav-link {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #7bb8bf;
+}
+
+/* Carrito en desktop */
+.carrito {
+    margin-left: auto; 
+}
+
+/* Menú desplegable */
+.navbar-nav .dropdown-menu {
+    background-color: #e4b081;
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #000;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f4c17a;
+}
+
+.logo-main {
+    max-width: 100%;  
+    height: 400px;     
+    display: block;   
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 5%;
+}
+
+/* Centrar el texto debajo de la imagen */
+.container {
+    text-align: center; 
+    
+}
+
+.gallery .row ul {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles para adaptarse al tamaño del contenedor */
+    gap: 16px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.gallery .row ul li {
+    text-align: center; 
+}
+
+.gallery .row ul li img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; /* Mantiene las proporciones y rellena el espacio definido */
+    border-radius: 8px; 
+}
+
+.gallery .row ul li p {
+    margin-top: 8px; 
+    font-size: 14px; 
+    color: #333; 
+    text-decoration: none; 
+}
+
+.gallery .row ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+footer{
+    background-color: #7bb8bf;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los contenedores */
+    align-items: center; /* Alineación vertical centrada */
+    padding: 20px ; /* Espaciado superior e inferior */
+    background-color: #7bb8bf; /* Color de fondo (opcional) */
+}
+
+footer .container {
+    display: flex; /* Coloca los elementos en fila */
+    align-items: center; /* Asegura que las imágenes estén centradas verticalmente */
+    gap: 40px; /* Espaciado entre íconos */
+}
+
+footer img {
+    width: auto; /* Ajusta automáticamente el ancho */
+    height: 68px; /* Establece una altura máxima uniforme */
+    display: block;
+    object-fit: contain;  /* Evita espacios adicionales debajo de las imágenes */
+}
+
+
+footer .f-one {
+    justify-content: flex-start; /* Alinea el primer grupo a la izquierda */
+}
+
+footer .f-two {
+    justify-content: flex-end; /* Alinea el segundo grupo a la derecha */
+}
+
+.footer-text{
+    font-size: 1.2em;
+    padding-top: 2%;
+}
+
+/* Estilos específicos para móvil */
+@media (max-width: 480px) {
+    /* Ocultar el carrito de escritorio en móvil */
+    .carrito {
+        display: none;
+    }
+
+    /* Mostrar el carrito dentro del menú desplegable */
+    .carrito-mobile {
+        display: block; /* Visible solo dentro del menú desplegable */
+        text-align: center;
+    }
+
+    /* Menú desplegable vertical */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+
+    #img-collage{ 
+        max-width: 380px;
+        padding-left: 35%;
+    }
+    .logo-main {
+        width: 80%; /* Hace que la imagen sea un poco más grande en móviles */
+    }
+
+    .gallery .row ul {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    footer {
+        flex-direction: column; /* Coloca los contenedores uno debajo del otro */
+        align-items: center; /* Centra todo en pantallas pequeñas */
+        gap: 20px; /* Espaciado entre contenedores */
+    }
+
+    footer .container {
+        justify-content: flex-start;
+    }
+    footer .container p{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-text {
+        color: white;
+        margin-top: 16px;
+        font-size: 14px;
+        order: 2 ;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    footer img {
+        padding-left: 10%;
+    }
+    footer .f-one {
+        padding-left: 5%;
+
+    }
+    footer .f-two {
+        padding-left: 8%;
+    }
+}
