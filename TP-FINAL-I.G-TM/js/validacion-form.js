@@ -1,4 +1,4 @@
-var form = document.querySelector('.needs-validation');
+let form = document.querySelector('.needs-validation');
             
                 // Evitar el envío del formulario si no es válido
                 form.addEventListener('submit', function (event) {

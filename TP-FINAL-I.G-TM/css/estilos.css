@@ -324,7 +324,7 @@ footer .f-two {
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 15px;
 }
 
 .tablero {
@@ -416,7 +416,10 @@ button:hover {
 .btn-audio:active {
     transform: scale(0.95);
 }
+.container-funny{
+    padding-left: 4%;
 
+}
 /*Fin de estilos juego*/
 
 
