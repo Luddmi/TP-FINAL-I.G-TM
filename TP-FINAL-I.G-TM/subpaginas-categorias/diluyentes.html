@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Diluyentes Collage</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <img id="" src="../img/logo-collage-web.png" alt="Logo" width="100" height="60">
+            </a>
+
+            <!-- Botón de menú en dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Categorías con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                            <li><a class="dropdown-item" href="./pinceles.html">Pinceles</a></li>
+                            <li><a class="dropdown-item" href="./bastidores.html">Bastidores</a></li>
+                            <li><a class="dropdown-item" href="./acuarelas.html">Acuarelas</a></li>
+                            <li><a class="dropdown-item" href="./lapices.html">Lápices</a></li>
+                            <li><a class="dropdown-item" href="./cuadernos.html">Cuadernos</a></li>
+                            <li><a class="dropdown-item" href="./oleos.html">Óleos</a></li>
+                            <li><a class="dropdown-item" href="./acrilicos.html">Acrílicos</a></li>
+                            <li><a class="dropdown-item" href="./diluyentes.html">Diluyentes</a></li>
+                            <li><a class="dropdown-item" href="./mezcladores.html">Mezcladores</a></li>
+                            <li><a class="dropdown-item" href="./setartistas.html">Set para artistas</a></li>
+                        </ul>
+                    </li>
+
+                    <!--enlaces principales -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../guia-de-uso.html">Guía de uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tienda.html">Tienda</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../juego.html">Juego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../servicios.html">Servicios</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto.html">Contacto</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+
+                <!-- Carrito en versión móvil -->
+                <a class="navbar-brand carrito-mobile d-lg-none" href="#" id="carrito-icono-mobile">
+                    <img src="../img/carrito.png" alt="Carrito" width="40" height="40">
+                    <span id="carrito-contador-mobile" class="carrito-contador">0</span>
+                </a>
+
+                <!-- Carrito en versión desktop -->
+                <a class="navbar-brand carrito d-none d-lg-block" href="#" id="carrito-icono-desktop">
+                    <img src="../img/carrito.png" alt="Carrito" width="40" height="40">
+                    <span id="carrito-contador-desktop" class="carrito-contador">0</span>
+                </a>
+
+                <!-- Contenedor desplegable del carrito -->
+                <div id="carrito-desplegable" class="carrito-desplegable">
+                    <h4>Carrito de Compras</h4>
+                    <ul id="lista-carrito">
+                        <!-- Aquí se agregan los productos dinámicamente -->
+                    </ul>
+                    <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+                </div>
+
+    </nav>
+
+
+    <div class="container text-center">
+        <img src="../img/logo-collage-web.png" class="img-fluid p-4" width="300" height="100" alt="Logo Collage">
+        <div>
+            <h1>Diluyentes</h1>
+            <p>Lográ la mejor consistencia para tus pinturas con nuestros diluyentes profesionales</p>
+        </div>
+    </div>
+
+
+    <div class="product-list">
+        <div class="card">
+            <img src="./img-categorias/diluyente1.jpg" class="card-img-top" alt="Acrílicos">
+            <div class="card-body">
+                <h5 class="card-title">Aceite de cartamo</h5>
+                <p class="card-text">Lográ la consistencia perfecta para tu óleos</p>
+                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img-categorias/diluyente2.png" class="card-img-top" alt="Acrílicos">
+            <div class=" card-body">
+                <h5 class="card-title">Diluyente ecológico</h5>
+                <p class="card-text">Diluyente para óleos</p>
+                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img-categorias/diluyente3.jpg" class="card-img-top" alt="Acrílicos">
+            <div class="card-body">
+                <h5 class="card-title">Promo 2 diluyentes</h5>
+                <p class="card-text">LLevá 2 diluyentes, uno de 500ml y otro de 200ml
+                </p>
+                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <section class="beneficios">
+        <h2>¿Por qué elegirnos?</h2>
+        <ul>
+            <li>Materiales de alta calidad a precios accesibles.</li>
+            <li>Atención personalizada para cada cliente.</li>
+            <li>Acceso a talleres exclusivos y eventos de arte.</li>
+        </ul>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="container f-one">
+            <!-- Logo de contacto -->
+            <a href="#" id="contacto-logo" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                <img src="../img/logo-carta.png" alt="contacto" style="width: 75px;">
+            </a>
+
+            <!-- Logo de info -->
+            <a href="#" id="info-logo" data-bs-toggle="modal" data-bs-target="#modalInfo">
+                <img src=" ../img/logo-info.png" alt="contacto" style="width: 60px;">
+            </a>
+
+            <a href="https://multimedia.una.edu.ar/" target="_blank">
+                <img src=" ../img/una-multi.png" alt="contacto" style="width: 100px;">
+            </a>
+
+            <!-- Modal para el logo de contacto -->
+            <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalContactoLabel">Contactá con nosotros!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa tu nombre.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" required>
+                                    <div class="invalid-feedback">
+                                        Ingresa un correo electrónico válido.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                                    <div class="invalid-feedback">
+                                        El mensaje no puede estar vacío.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Modal para el logo de info -->
+        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalInfoLabel">Información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mi información:
+                            Nombre: Ludmila Tejada <br>
+                            Materia: Informática General <br>
+                            Cátedra: Drelichman <br>
+                            Turno: Mañana <br>
+                            Año: 2024 <br>
+
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <p class="footer-text" style="color: white;">Gracias por visitarnos, no dudes en contactarnos ante cualquier
+            duda. También podés visitar nuestras redes sociales para no perderte de las novedades!</p>
+
+        <div class="container f-two">
+            <a href="">
+                <img src="../img/logo-facebook.png" alt="contacto" style="width: 70px;">
+            </a>
+            <a href="">
+                <img src=" ../img/logo-instagam.png" alt="contacto" style="width: 50px;">
+            </a>
+            <a href="">
+                <img src="../img/logo-wsp.webp" alt="contacto" style="width: 45px;">
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/validacion-form.js"></script>
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
