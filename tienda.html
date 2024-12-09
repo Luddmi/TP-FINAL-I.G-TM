@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Tienda Collage</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img id="" src="./img/logo-collage-web.png" alt="Logo" width="100" height="60">
+            </a>
+
+            <!-- Botón de menú en dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Categorías con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/pinceles.html">Pinceles</a></li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/bastidores.html">Bastidores</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/acrilicos.html">Acuarelas</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/lapices.html">Lápices</a></li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/cuadernos.html">Cuadernos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/oleos.html">Óleos</a></li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/acrilicos.html">Acrílicos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/diluyentes.html">Diluyentes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/mezcladores.html">Mezcladores</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./subpaginas-categorias/setartistas.html">Set para
+                                    artistas</a></li>
+                        </ul>
+                    </li>
+
+                    <!--enlaces principales -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="guia-de-uso.html">Guía de uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a> <!-- Nueva página -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+
+                <!-- Carrito en versión móvil -->
+                <a class="navbar-brand carrito-mobile d-lg-none" href="#" id="carrito-icono-mobile">
+                    <img src="./img/carrito.png" alt="Carrito" width="40" height="40">
+                    <span id="carrito-contador-mobile" class="carrito-contador">0</span>
+                </a>
+
+                <!-- Carrito en versión desktop -->
+                <a class="navbar-brand carrito d-none d-lg-block" href="#" id="carrito-icono-desktop">
+                    <img src="./img/carrito.png" alt="Carrito" width="40" height="40">
+                    <span id="carrito-contador-desktop" class="carrito-contador">0</span>
+                </a>
+
+                <!-- Contenedor desplegable del carrito -->
+                <div id="carrito-desplegable" class="carrito-desplegable">
+                    <h4>Carrito de Compras</h4>
+                    <ul id="lista-carrito">
+                        <!-- Aquí se agregan los productos dinámicamente -->
+                    </ul>
+                    <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+                </div>
+                <script src="./js/carrito.js"></script>
+    </nav>
+
+    <div class="container text-center p-3">
+        <img src="./img/logo-collage-web.png" class="img-fluid p-4" width="220" height="60" alt="Logo Collage">
+        <h1>Nuestra tienda:</h1>
+        <p class="p-3">Encontrá lo que buscás y de la mejor calidad para realizar tus proyectos! </p>
+
+    </div>
+
+
+    <main class="container">
+        <!-- Pinceles -->
+        <section class="tienda-categoria">
+            <h2>Pinceles:</h2>
+            <div class="tienda-product-list">
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias//pinceles2.jpg" class="tienda-card-img"
+                        alt="Set pinceles x7">
+                    <div class="tienda-card-body">
+                        <h5 class="tienda-card-title">Set pinceles x7</h5>
+                        <p class="tienda-card-text">Pinceles resistentes para técnicas de pintura al óleo y acrílico.
+                        </p>
+                        <a href="#" class="tienda-btn">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/pinceles3.jpg" class="tienda-card-img"
+                        alt="Set pinceles x4">
+                    <div class="tienda-card-body">
+                        <h5 class="tienda-card-title">Set pinceles x4</h5>
+                        <p class="tienda-card-text">Ideal para texturas que resaltarán tus obras.</p>
+                        <a href="#" class="tienda-btn">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/pinceles4.jpg" class="card-img-top" alt="pinceles">
+                    <div class="card-body">
+                        <h5 class="card-title">Set pinceles detalle </h5>
+                        <p class="card-text">Ideal para difuminar y dar ese toque que marcará la diferencia</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/pinceles5.jpg" class="card-img-top" alt="pinceles">
+                    <div class="card-body">
+                        <h5 class="card-title">Brochas planas</h5>
+                        <p class="card-text">Perfectos para trazos uniformes y técnicas abstractas</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/pinceles7.jpg" class="card-img-top" alt="pinceles">
+                    <div class="card-body">
+                        <h5 class="card-title">Set brochas profesionales</h5>
+                        <p class="card-text">Hechos con fibras de alta calidad para artistas exigentes</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bastidores -->
+        <section class="tienda-categoria">
+            <h2>Bastidores:</h2>
+            <div class="tienda-product-list">
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor1.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Set bastidores x3</h5>
+                        <p class="card-text">Lleva 3 bastidores de diferentes medidas (24x30, 30x40, 40x50).</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor3.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Bastidor 20x20</h5>
+                        <p class="card-text">La medida minimalista ideal.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor2.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Bastidor 24x30</h5>
+                        <p class="card-text">Llevá sólo lo mejor para vos!</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor2.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Bastidor 30x40</h5>
+                        <p class="card-text">Lo mejor para diseños únicos</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor2.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Bastidor 30x60</h5>
+                        <p class="card-text">Lo mejor para un paisaje o un retrato!</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/bastidor2.jpg" class="card-img-top" alt="Bastidor">
+                    <div class="card-body">
+                        <h5 class="card-title">Bastidor 40x50</h5>
+                        <p class="card-text">Sin límites a la imaginación!</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tienda-categoria">
+            <h2>Acuarelas:</h2>
+            <div class="tienda-product-list">
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas1.webp" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Plancha de acuarelas x12</h5>
+                        <p class="card-text">Incluye pincel</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas2.jpg" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Paleta de acuarelas x12</h5>
+                        <p class="card-text">Incluye pincel</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas4.jpg" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Set acurelas x24</h5>
+                        <p class="card-text">Caja de acuarelas x24 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas5.jpg" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Tubitos de acuarelas</h5>
+                        <p class="card-text">Producto x unidad</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas7.webp" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Set acuarelas x12</h5>
+                        <p class="card-text">Estuche de acuarelas x12 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acuarelas8.png" class="card-img-top"
+                        alt="Acuarelas">
+                    <div class="card-body">
+                        <h5 class="card-title">Set acuarelas x6</h5>
+                        <p class="card-text">Caja de acuarelas x6 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tienda-categoria">
+            <h2>Lápices:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices1.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de lápices de colores x36</h5>
+                        <p class="card-text">Lápices de colores profesionales para dar vida a tus dibujos</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices2.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápices metalizados</h5>
+                        <p class="card-text">Lápices de colores efecto metalizado</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices3.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Caja de lápices x6</h5>
+                        <p class="card-text">Caja de lápices de color x6 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices4.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz intercambiable</h5>
+                        <p class="card-text">Lápiz con punta intercambiable</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices5.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz con mina</h5>
+                        <p class="card-text">Lápiz con mina intercambiable para diseños de mayor precisión</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices6.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz con mina</h5>
+                        <p class="card-text">Lápiz con mina, diseño color pastel</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz HB</h5>
+                        <p class="card-text">Lápiz de dibujo profesional HB</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 2B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 2B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz H</h5>
+                        <p class="card-text">Lápiz de dibujo profesional H</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 2H</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 2H</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 3H</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 3H</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 4H</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 5H</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 6H</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 6H</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 3B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 3B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 4B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 4B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 5B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 5B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 6B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 6B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 7B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 7B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz 8B</h5>
+                        <p class="card-text">Lápiz de dibujo profesional 8B</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/lapices7.jpg" class="card-img-top" alt="Lápices">
+                    <div class="card-body">
+                        <h5 class="card-title">Lápiz F</h5>
+                        <p class="card-text">Lápiz de dibujo profesional F</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tienda-categoria">
+            <h2>Cuadernos:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/cuadernos1.jpg" class="card-img-top"
+                        alt="Cuaderno dibujo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuaderno de dibujo</h5>
+                        <p class="card-text">Cuaderno hoja lisa con gramaje para dibujo</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/cuadernos2.jpg" class="card-img-top"
+                        alt="Anotadores">
+                    <div class="card-body">
+                        <h5 class="card-title">Anotadores</h5>
+                        <p class="card-text">Anotadores con tapa PVC </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/cuadernos3.jpg" class="card-img-top" alt="Agenda">
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda</h5>
+                        <p class="card-text">Agenda tapa dura</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/cuadernos4.jpg" class="card-img-top"
+                        alt="Cuaderno universitario">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuaderno universitario</h5>
+                        <p class="card-text">Cuaderno universitario x84 hojas. Rayado y cuadriculado
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tienda-categoria">
+            <h2>Óleos:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/oleos1.jpg" class="card-img-top" alt="Óleos">
+                    <div class="card-body">
+                        <h5 class="card-title">Óleos x10</h5>
+                        <p class="card-text">Óleos x10 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/oleos2.jpg" class="card-img-top" alt="Óleos">
+                    <div class="card-body">
+                        <h5 class="card-title">Set óleos x24</h5>
+                        <p class="card-text">Caja de óleos x24 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/oleos3.webp" class="card-img-top" alt="Óleos">
+                    <div class="card-body">
+                        <h5 class="card-title">Set óleos x6</h5>
+                        <p class="card-text">Óleos x6 unidades</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/oleos3.webp" class="card-img-top" alt="Óleos">
+                    <div class="card-body">
+                        <h5 class="card-title">Óleos xunidad</h5>
+                        <p class="card-text">Óleos xunidad. Variedad de colores</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="tienda-categoria">
+            <h2>Acrílicos:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acrilicos1.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Acrílicos</h5>
+                        <p class="card-text">Acrílicos "Acuarel", todos los colores!</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acrilicos2.webp" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class=" card-body">
+                        <h5 class="card-title">Acrílicos pastel</h5>
+                        <p class="card-text">Pruebe la línea de colores pastel de "Acuarel"</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acrilicos3.webp" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Acrílicos metalizados</h5>
+                        <p class="card-text">Pruebe los acrílicos metalizados de "eQ" y resalte sus proyectos on un
+                            toque único
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/acrilicos4.png" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Acrílicos fluo</h5>
+                        <p class="card-text">Pruebe la línea fluo de "Acuarel"</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tienda-categoria">
+            <h2>Diluyentes de pintura:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/diluyente1.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceite de cartamo</h5>
+                        <p class="card-text">Lográ la consistencia perfecta para tu óleos</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/diluyente2.png" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class=" card-body">
+                        <h5 class="card-title">Diluyente ecológico</h5>
+                        <p class="card-text">Diluyente para óleos</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/diluyente3.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Promo 2 diluyentes</h5>
+                        <p class="card-text">LLevá 2 diluyentes, uno de 500ml y otro de 200ml
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tienda-categoria">
+            <h2>Mezcladores de pintura:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/mezclador1.webp" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Paleta mezcladora de madera</h5>
+                        <p class="card-text">Mezclador de madera, cómodo y fácil de llevar</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/mezclador2.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class=" card-body">
+                        <h5 class="card-title">Mezclador plástico</h5>
+                        <p class="card-text">Mezclador de plástico circular</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/mezclador3.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Paleta mezcladora plástica</h5>
+                        <p class="card-text">Mezclador de material plástico
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/mezclador4.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Mezclador plástico</h5>
+                        <p class="card-text">Mezclador de plástico con forma de flor
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tienda-categoria">
+            <h2>Set para artistas:</h2>
+            <div class="tienda-product-list">
+
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/setartista1.jpg" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Set artista 1</h5>
+                        <p class="card-text">Set artista, incluye paleta mezcladora. Perfecto para organizar tus
+                            pinturas,
+                            diluyentes y pinceles</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/setartista2.webp" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class=" card-body">
+                        <h5 class="card-title">Set artista 2</h5>
+                        <p class="card-text">Set artista, perfecto para organizar tus pinturas y tus pinceles. (No
+                            incluye
+                            paleta)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="tienda-card">
+                    <img src="./subpaginas-categorias/img-categorias/setartista3.webp" class="card-img-top"
+                        alt="Acrílicos">
+                    <div class="card-body">
+                        <h5 class="card-title">Organizador</h5>
+                        <p class="card-text">Organizador para tus pinturas y pinceles. Tenelos siempre a mano!
+                        </p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <section class="beneficios">
+        <h2>¿Por qué elegirnos?</h2>
+        <ul>
+            <li>Materiales de alta calidad a precios accesibles.</li>
+            <li>Atención personalizada para cada cliente.</li>
+            <li>Acceso a talleres exclusivos y eventos de arte.</li>
+        </ul>
+    </section>
+
+
+    <footer class="container-fluid">
+        <div class="container f-one">
+            <!-- Logo de contacto -->
+            <a href="#" id="contacto-logo" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                <img src="./img/logo-carta.png" alt="contacto" style="width: 75px;">
+            </a>
+
+            <!-- Logo de info -->
+            <a href="#" id="info-logo" data-bs-toggle="modal" data-bs-target="#modalInfo">
+                <img src=" ./img/logo-info.png" alt="contacto" style="width: 60px;">
+            </a>
+
+            <a href="https://multimedia.una.edu.ar/" target="_blank">
+                <img src=" ./img/una-multi.png" alt="contacto" style="width: 100px;">
+            </a>
+
+            <!-- Modal para el logo de contacto -->
+            <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalContactoLabel">Contactá con nosotros!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa tu nombre.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" required>
+                                    <div class="invalid-feedback">
+                                        Ingresa un correo electrónico válido.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                                    <div class="invalid-feedback">
+                                        El mensaje no puede estar vacío.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Modal para el logo de info -->
+        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalInfoLabel">Información</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mi información:
+                            Nombre: Ludmila Tejada <br>
+                            Materia: Informática General <br>
+                            Cátedra: Drelichman <br>
+                            Turno: Mañana <br>
+                            Año: 2024 <br>
+
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <p class="footer-text" style="color: white;">Gracias por visitarnos, no dudes en contactarnos ante cualquier
+            duda. También podés visitar nuestras redes sociales para no perderte de las novedades!</p>
+
+        <div class="container f-two">
+            <a href="">
+                <img src="./img/logo-facebook.png" alt="contacto" style="width: 70px;">
+            </a>
+            <a href="">
+                <img src=" ./img/logo-instagam.png" alt="contacto" style="width: 50px;">
+            </a>
+            <a href="">
+                <img src="./img/logo-wsp.webp" alt="contacto" style="width: 45px;">
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/validacion-form.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
